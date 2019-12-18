@@ -1,0 +1,909 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Mediacare</title>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <header>
+      <div class="container">
+        <div class="row top-header">
+          <div class="col-xs-12 col-sm-6">
+            <a href=""><img class="img-responsive" src="img/logo.png" alt=""></a>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="header-tagline">
+              <a href="tel:1-888-408-6913" class="tel">1-888-408-6913</a>
+              <span>Speak with a Licensed Insurance Agent</span>
+              <span><span id="operator"></span>Agents are waiting to take your call</span>
+            </div><!-- header-tagline -->
+          </div>
+        </div><!-- row top-header-->
+      </div><!-- container -->
+
+       <nav class="navbar navbar-default">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="l-active"><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                  <a href="/medicare-basics.html" href="#">Medicare Basics</a>
+                  <ul class="dropdown-menu" id="dropdown-menu-b">
+                    <li><a href="/medicare-basics.html#m-basics-a">Medicare Part A</a></li>
+                    <li><a href="/medicare-basics.html#m-basics-b">Medicare Part B</a></li>
+                    <li><a href="/medicare-basics.html#m-basics-c">Medicare Part C</a></li>
+                    <li><a href="/medicare-basics.html#m-basics-d">Medicare Part D</a></li>
+                    <li><a href="/medicare-basics.html#m-supplement">Medicare Supplements</a></li>
+                  </ul>
+                </li>
+                <li><a href="mediacare-options.html">Medicare Options</a></li>
+                <li><a href="mediacare-resources.html">Medicare Resources</a></li>
+                <li><a href="form-b.html">Contact</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+
+    </header><!-- header -->
+
+    <main>
+      <div class="wrapper container">
+        <div class="col-xs-12 col-sm-3 secondary">
+          <div class="secondary-content">
+            <div class="secondary-content-block">
+              <h3>Shop by product</h3>
+              <ul class="shop-by-product">
+                <li>
+                   <div class="f-group">
+                    <input class="radio" id="r1" name="rd" type="radio">
+                    <label for="r1" class="radio-label">Medicare Advantage</label>
+                  </div>
+                </li>
+                <li>
+                   <div class="f-group">
+                    <input class="radio" id="r2" name="rd" type="radio">
+                    <label for="r2" class="radio-label">Medicare Suplements</label>
+                  </div>
+                </li>
+                <li>
+                   <div class="f-group">
+                    <input class="radio" id="r3" name="rd" type="radio">
+                    <label for="r3" class="radio-label">Medicare Part D</label>
+                  </div>
+                </li>
+                <li class="help-choose"><a href="">Help me choose</a></li>
+              </ul>
+              <h3>Narrow plans by:</h3>
+            </div><!-- secondary-content-block -->
+
+            <div class="secondary-content-block">
+              <h4 data-toggle="collapse" data-target="#company">Company</h4>
+              <ul id="company" class="collapse in">
+                <li>
+                  <div class="f-group">
+                    <input class="checkbox" id="arlic" type="checkbox">
+                    <label for="arlic" class="checkbox-label">ARLIC</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="f-group">
+                    <input class="checkbox" id="omaha" type="checkbox">
+                    <label for="omaha" class="checkbox-label">Mutual of Omaha</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="f-group">
+                    <input class="checkbox" id="humana" type="checkbox">
+                    <label for="humana" class="checkbox-label">Humana</label>
+                  </div>
+                </li>
+              </ul>
+            </div><!-- secondary-content-block -->
+
+            <div class="secondary-content-block">
+              <h4 data-toggle="collapse" data-target="#monthly">Monthly Premium</h4>
+              <ul id="monthly" class="collapse in">
+                <li>
+                  <div class="f-group">
+                    <input class="checkbox" id="pr-1" type="checkbox">
+                    <label for="pr-1" class="checkbox-label">Under &dollar;100</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="f-group">
+                    <input class="checkbox" id="pr-2" type="checkbox">
+                    <label for="pr-2" class="checkbox-label">&dollar;100 to &dollar;200</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="f-group">
+                    <input class="checkbox" id="pr-3" type="checkbox">
+                    <label for="pr-3" class="checkbox-label">&dollar;200 to &dollar;300</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="f-group">
+                    <input class="checkbox" id="pr-4" type="checkbox">
+                    <label for="pr-4" class="checkbox-label">&dollar;300 & Above</label>
+                  </div>
+                </li>
+              </ul>
+            </div><!-- secondary-content-block -->
+
+            <div class="secondary-content-block">
+              <h4 data-toggle="collapse" data-target="#part-a">Part A Deductible</h4>
+              <ul id="part-a" class="collapse in">
+                <li>
+                  <div class="f-group">
+                    <input class="checkbox" id="pra-0" type="checkbox">
+                    <label for="pra-0" class="checkbox-label">No deductible</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="f-group">
+                    <input class="checkbox" id="pra-1" type="checkbox">
+                    <label for="pra-1" class="checkbox-label">Under &dollar;300</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="f-group">
+                    <input class="checkbox" id="pra-2" type="checkbox">
+                    <label for="pra-2" class="checkbox-label">&dollar;300 to &dollar;600</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="f-group">
+                    <input class="checkbox" id="pra-3" type="checkbox">
+                    <label for="pra-3" class="checkbox-label">&dollar;600 to &dollar;1,200</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="f-group">
+                    <input class="checkbox" id="pra-4" type="checkbox">
+                    <label for="pra-4" class="checkbox-label">&dollar;1,200 & Above</label>
+                  </div>
+                </li>
+              </ul>
+            </div><!-- secondary-content-block -->
+
+            <div class="secondary-content-block">
+              <h4 data-toggle="collapse" data-target="#part-b">Part B Deductible</h4>
+              <ul id="part-b" class="collapse in">
+                <li>
+                  <div class="f-group">
+                    <input class="checkbox" id="prb-0" type="checkbox">
+                    <label for="prb-0" class="checkbox-label">No deductible</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="f-group">
+                    <input class="checkbox" id="prb-1" type="checkbox">
+                    <label for="prb-1" class="checkbox-label">Under &dollar;150</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="f-group">
+                    <input class="checkbox" id="prb-2" type="checkbox">
+                    <label for="prb-2" class="checkbox-label">&dollar;150 & Above</label>
+                  </div>
+                </li>
+              </ul>
+            </div><!-- secondary-content-block -->
+          </div><!-- secondary-content -->
+
+          <button type="button" class="btn">Find Plans</button>
+        </div><!-- secondary -->
+
+        <div class="col-xs-12 col-sm-9 primary">
+          <div class="row primary-heading">
+            <div class="col-xs-12 col-sm-6">
+              <h2>Medicare Supplement plans</h2>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <div class="filter-block pull-right">
+                <label for="">Sort by</label>
+                <select name="" id="">
+                  <option value="">Monthly Premium</option>
+                  <option value="">Monthly Premium</option>
+                </select>
+                <a href="javascript:if(window.print)window.print()"><i class="fa fa-print" aria-hidden="true"></i> Print</a>
+              </div>
+            </div>
+          </div><!-- row -->
+
+          <div class="row">
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Plan</th>
+                    <th>Coverage Highlights</th>
+                    <th>Annual<br>Deductable</th>
+                    <th>Monthly<br>Premium</th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <th colspan="5"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img class="img-responsive" src="img/plans-logos/logo1.png" alt="">
+                      <div class="f-group">
+                        <input class="checkbox" id="cm1" type="checkbox">
+                        <label for="cm1" class="checkbox-label">Compare</label>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="active"><i class="fa fa-check" aria-hidden="true"></i>Part B Excess Charges</span>
+                      <span class="active"><i class="fa fa-check" aria-hidden="true"></i>Skilled Nursing</span>
+                      <span class="active"><i class="fa fa-check" aria-hidden="true"></i>Foreign Travel</span>
+                      <span class="emergency">Emergency</span>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td><button type="button" class="btn" data-toggle="modal" data-target="#FormModal">Enroll</button>
+                      <a href="" class="view">View Details</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img class="img-responsive" src="img/plans-logos/logo2.png" alt="">
+                      <div class="f-group">
+                        <input class="checkbox" id="cm2" type="checkbox">
+                        <label for="cm2" class="checkbox-label">Compare</label>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="inactive"><i class="fa fa-times" aria-hidden="true"></i>Part B Excess Charges</span>
+                      <span class="active"><i class="fa fa-check" aria-hidden="true"></i>Skilled Nursing</span>
+                      <span class="inactive"><i class="fa fa-times" aria-hidden="true"></i></i>Foreign Travel</span>
+                      <span class="emergency">Emergency</span>
+                    </td>
+                    <td><span>Part A:</span><span>Part B:</span></td>
+                    <td></td>
+                    <td><button type="button" class="btn" data-toggle="modal" data-target="#FormModal">Enroll</button>
+                      <a href="" class="view">View Details</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img class="img-responsive" src="img/plans-logos/logo3.png" alt="">
+                      <div class="f-group">
+                        <input class="checkbox" id="cm3" type="checkbox">
+                        <label for="cm3" class="checkbox-label">Compare</label>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="inactive"><i class="fa fa-times" aria-hidden="true"></i>Part B Excess Charges</span>
+                      <span class="active"><i class="fa fa-check" aria-hidden="true"></i>Skilled Nursing</span>
+                      <span class="inactive"><i class="fa fa-times" aria-hidden="true"></i></i>Foreign Travel</span>
+                      <span class="emergency">Emergency</span>
+                    </td>
+                    <td><span>Part A:</span><span>Part B:</span></td>
+                    <td></td>
+                    <td><button type="button" class="btn" data-toggle="modal" data-target="#FormModal">Enroll</button>
+                      <a href="" class="view">View Details</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img class="img-responsive" src="img/plans-logos/logo4.png" alt="">
+                      <div class="f-group">
+                        <input class="checkbox" id="cm4" type="checkbox">
+                        <label for="cm4" class="checkbox-label">Compare</label>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="inactive"><i class="fa fa-times" aria-hidden="true"></i>Part B Excess Charges</span>
+                      <span class="active"><i class="fa fa-check" aria-hidden="true"></i>Skilled Nursing</span>
+                      <span class="inactive"><i class="fa fa-times" aria-hidden="true"></i></i>Foreign Travel</span>
+                      <span class="emergency">Emergency</span>
+                    </td>
+                    <td><span>Part A:</span><span>Part B:</span></td>
+                    <td></td>
+                    <td><button type="button" class="btn" data-toggle="modal" data-target="#FormModal">Enroll</button>
+                      <a href="" class="view">View Details</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img class="img-responsive" src="img/plans-logos/logo5.png" alt="">
+                      <div class="f-group">
+                        <input class="checkbox" id="cm5" type="checkbox">
+                        <label for="cm5" class="checkbox-label">Compare</label>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="inactive"><i class="fa fa-times" aria-hidden="true"></i>Part B Excess Charges</span>
+                      <span class="active"><i class="fa fa-check" aria-hidden="true"></i>Skilled Nursing</span>
+                      <span class="inactive"><i class="fa fa-times" aria-hidden="true"></i></i>Foreign Travel</span>
+                      <span class="emergency">Emergency</span>
+                    </td>
+                    <td><span>Part A:</span><span>Part B:</span></td>
+                    <td></td>
+                    <td><button type="button" class="btn" data-toggle="modal" data-target="#FormModal">Enroll</button>
+                      <a href="" class="view">View Details</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img class="img-responsive" src="img/plans-logos/logo6.png" alt="">
+                      <div class="f-group">
+                        <input class="checkbox" id="cm6" type="checkbox">
+                        <label for="cm6" class="checkbox-label">Compare</label>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="inactive"><i class="fa fa-times" aria-hidden="true"></i>Part B Excess Charges</span>
+                      <span class="active"><i class="fa fa-check" aria-hidden="true"></i>Skilled Nursing</span>
+                      <span class="inactive"><i class="fa fa-times" aria-hidden="true"></i></i>Foreign Travel</span>
+                      <span class="emergency">Emergency</span>
+                    </td>
+                    <td><span>Part A:</span><span>Part B:</span></td>
+                    <td></td>
+                    <td><button type="button" class="btn" data-toggle="modal" data-target="#FormModal">Enroll</button>
+                      <a href="" class="view">View Details</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img class="img-responsive" src="img/plans-logos/logo7.png" alt="">
+                      <div class="f-group">
+                        <input class="checkbox" id="cm7" type="checkbox">
+                        <label for="cm7" class="checkbox-label">Compare</label>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="inactive"><i class="fa fa-times" aria-hidden="true"></i>Part B Excess Charges</span>
+                      <span class="active"><i class="fa fa-check" aria-hidden="true"></i>Skilled Nursing</span>
+                      <span class="inactive"><i class="fa fa-times" aria-hidden="true"></i></i>Foreign Travel</span>
+                      <span class="emergency">Emergency</span>
+                    </td>
+                    <td><span>Part A:</span><span>Part B:</span></td>
+                    <td></td>
+                    <td><button type="button" class="btn" data-toggle="modal" data-target="#FormModal">Enroll</button>
+                      <a href="" class="view">View Details</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img class="img-responsive" src="img/plans-logos/logo8.png" alt="">
+                      <div class="f-group">
+                        <input class="checkbox" id="cm8" type="checkbox">
+                        <label for="cm8" class="checkbox-label">Compare</label>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="inactive"><i class="fa fa-times" aria-hidden="true"></i>Part B Excess Charges</span>
+                      <span class="active"><i class="fa fa-check" aria-hidden="true"></i>Skilled Nursing</span>
+                      <span class="inactive"><i class="fa fa-times" aria-hidden="true"></i></i>Foreign Travel</span>
+                      <span class="emergency">Emergency</span>
+                    </td>
+                    <td><span>Part A:</span><span>Part B:</span></td>
+                    <td></td>
+                    <td><button type="button" class="btn">Enroll</button>
+                      <a href="" class="view" data-toggle="modal" data-target="#FormModal">View Details</a></td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div><!-- row -->
+
+        </div><!-- primary -->
+      </div><!-- wrapper -->
+      <section class="medicare-in-your-area">
+        <div class="container">
+          <div class="col-xs-12 col-sm-5">
+            <img class="img-responsive" src="img/map.png" alt="">
+          </div>
+          <div class="col-xs-12 col-sm-7 list-of-states">
+            <ul>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Alabama</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Alaska</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Arkansass</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Arizona</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">California</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Colorado</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Connectiut</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Delaware</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Distict of Columbia</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Florida</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Georgia</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Hawaii</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Idaho</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Illinois</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Indiana</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Iowa</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Kansas</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Kentucky</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Louisiana</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Maine</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Maryland</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Massachusetts</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Michigan</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Minnesota</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Mississippi</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Missouri</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Montana</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Nebraska</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Nevada</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">New Hampshire</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">New Jersey</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">New Mexico</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">New York</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">North Carolina</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">North Dakota</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Ohio</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Oklahoma</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Oregon</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Pennsylvania</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Rhode Island</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">South Carolina</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">South Dakota</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Tennessee</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Texas</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Utah</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Vermont</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Virginia</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Washington</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">West Virginia</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Wisconsin</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Wyoming</a></li>
+            </ul>
+          </div><!-- list-of-states -->
+        </div><!-- container -->
+      </section><!-- medicare-in-your-area -->
+
+    </main><!-- main -->
+
+    <footer>
+     <div class="container">
+        <div class="top-footer top-footer-inner-pages clearfix">
+          <div class="col-xs-12 col-sm-7">
+            <ul>
+              <li><a href="index.html">Medicare Basics</a></li>
+              <li><a href="mediacare-options.html">Medicare Options</a></li>
+              <li><a href="mediacare-resources.html">Medicare Resources</a></li>
+              <li><a href="">Medicare Services</a></li>
+              <li><a href="form-b.html">Contact</a></li>
+            </ul>
+            <ul>
+              <li><a href="" data-toggle="modal" data-target="#privacyModal">Privacy Policy</a></li>
+              <li><a href="" data-toggle="modal" data-target="#termsModal">Terms & Conditions</a></li>
+            </ul>
+            <ul class="socials">
+              <li><a class="facebook" href=""></a></li>
+              <li><a class="linkedin" href=""></a></li>
+              <li><a class="twitter" href=""></a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-sm-offset-1">
+            <div class="contact-block">
+              <hgroup>
+                <h4>Speak with a Licensed Insurance Agent</h4>
+                <h2>1-888-408-6913</h2>
+              </hgroup>
+              <a href=""><img src="img/footer-logo.png" alt=""></a>
+            </div>
+          </div>
+        </div><!-- top-footer -->
+     </div><!-- container -->
+
+      <div class="copyright">
+        <div class="container">
+          <div class="col-xs-12 col-sm-8 copyright-text">
+            <p>Copyright &copy; TheMedicareEnrollmentCenter.com. All rights reserved.</p>
+          </div>
+        </div>
+      </div><!-- copyright -->
+    </footer>
+
+  </div><!-- container-fluid -->
+
+  <!-- Modal -->
+  <div id="stateModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- stateModal -->
+
+<!-- Modal -->
+<div id="FormModal" class="plans-a modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-content-wrapper">
+        <div class="form-header clearfix">
+          <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+          <div class="col-xs-12 col-sm-8">
+            <h4 class="form-title">Applicant Info</h4>
+            <span>All fields marked with an asterisk <span class="required">*</span> are required</span>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="form-logo pull-right">
+              <p>Secure Application</p>
+              <img src="img/logo-m.png" alt="">
+              <span>powered by <span>VeriSign</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <form action="form-submit.html" method="get" class="clearfix">
+            <section class="applicant">
+              <h3 class="form-heading">Applicant</h3>
+              <div class="section-content">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-5 forms-inline">
+                    <div class="form-group">
+                      <label for="f-name"><span class="required">*</span>First Name</label>
+                      <input type="text" class="form-control" id="f-name">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-1 forms-inline">
+                    <div class="form-group">
+                      <label for="mi">MI</label>
+                      <input type="text" class="form-control" id="mi">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-4 forms-inline">
+                    <div class="form-group">
+                      <label for="l-name"><span class="required">*</span>Last Name</label>
+                      <input type="text" class="form-control" id="l-name">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-2 forms-inline">
+                    <label for="l-name"><span class="required">*</span>Gender</label>
+                    <select name="" id="">
+                      <option value="">Male</option>
+                      <option value="">Female</option>
+                    </select>
+                  </div>
+                </div><!-- row -->
+
+                <div class="row">
+                  <div class="col-xs-12 col-sm-4 forms-inline">
+                    <div class="form-group dates">
+                      <label><span class="required">*</span>Date of Birth</label>
+                      <input type="number" class="form-control" placeholder="mm">
+                      <span>/</span>
+                      <input type="number" class="form-control" placeholder="dd">
+                      <span>/</span>
+                      <input type="number" class="form-control" placeholder="yyyy">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-7 col-sm-offset-1 forms-inline">
+                    <label for="l-name"><span class="required">*</span>Use Tobacco Products</label>
+                    <div class="radio">
+                      <div class="f-group">
+                        <input class="radio" id="radio-1" name="rd" type="radio">
+                        <label for="radio-1" class="radio-label">Yes</label>
+                      </div>
+                    </div>
+                    <div class="radio">
+                      <div class="f-group">
+                        <input class="radio" id="radio-2" name="rd" type="radio">
+                        <label for="radio-2" class="radio-label">No</label>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- row -->
+
+                <div class="row">
+                  <div class="col-xs-12 forms-inline">
+                   <div class="form-group">
+                      <label for="l-name">Phone Number</label>
+                      (<input type="text"  class="form-control tel-code">)
+                      <input type="text" class="form-control tel-number">
+                   </div>
+                  </div>
+                </div><!-- row -->
+
+                <div class="row">
+                  <div class="col-xs-12 forms-inline">
+                    <div class="form-group">
+                      <label>Email Address: By providing your e-mail address, you authorize <strong>MFA</strong> to send you important health plan information</label>
+                      <input type="email" class="form-control">
+                    </div>
+                  </div>
+                </div><!-- row -->
+
+                <div class="row">
+                  <div class="col-xs-12 forms-inline">
+                    <div class="form-group">
+                      <div class="f-group">
+                        <input class="checkbox" id="checkbox-3" type="checkbox">
+                        <label for="checkbox-3" class="checkbox-label"><span>You may have the option to receive certain plan information and coverage documents securely on-line instead of via postal mail. If you prefer to receive the communications described in your enrollment book on-line, please check this box.</span></label>
+                    </div>
+                  </div>
+                </div><!-- row -->
+              </div><!-- section-content -->
+            </section><!-- applicant -->
+
+            <section class="address">
+              <h3 class="form-heading">Address</h3>
+              <div class="section-content section-content-addr">
+                <div class="row">
+                  <div class="col-xs-12 forms-inline">
+                    <div class="form-group">
+                      <label for="r-addr"><span class="required">*</span>Residential Address (PO Box is not allowed)</label>
+                      <input type="text" class="form-control" id="r-addr">
+                    </div>
+                  </div>
+                </div><!-- row -->
+
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6 forms-inline">
+                    <div class="form-group">
+                      <label for="city"><span class="required">*</span>City</label>
+                      <input type="text" class="form-control" id="city">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-3 forms-inline">
+                    <div class="form-group">
+                      <label for="country"><span class="required">*</span>Country</label>
+                      <input type="text" class="form-control" id="country">
+                    </div>
+                  </div>
+                   <div class="col-xs-12 col-sm-1 forms-inline">
+                    <div class="form-group">
+                      <label for="f-state"><span class="required">*</span>State</label>
+                      <input type="text" class="form-control" id="f-state">
+                    </div>
+                  </div>
+                   <div class="col-xs-12 col-sm-2 forms-inline">
+                    <div class="form-group">
+                      <label for="zip"><span class="required">*</span>Zip Code</label>
+                      <input type="text" class="form-control" id="zip">
+                    </div>
+                  </div>
+                </div><!-- row -->
+
+                <div class="row">
+                  <div class="col-xs-12 forms-inline">
+                    <label for="l-name"><span class="required">*</span>Mailing address is different from residential address</label>
+                    <div class="radio">
+                      <div class="f-group">
+                        <input class="radio" id="radio-3" name="rd" type="radio">
+                        <label for="radio-3" class="radio-label">Yes</label>
+                      </div>
+                    </div>
+                    <div class="radio">
+                      <div class="f-group">
+                        <input class="radio" id="radio-4" name="rd" type="radio">
+                        <label for="radio-4" class="radio-label">No</label>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- row -->
+              </div><!-- section-content -->
+            </section><!-- address -->
+
+            <button type="submit" class="btn f-btn pull-right">Next</button>
+          </form>
+
+        </div><!-- modal-body -->
+      </div><!-- modal-content-wrapper -->
+
+    </div><!-- modal-content -->
+
+  </div>
+</div><!-- FormModal -->
+
+<!-- Modal -->
+<div id="FormModalOnLoad" class="plans-a-first modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-content-wrapper">
+        <div class="form-header clearfix">
+          <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+          <div class="col-xs-12 col-sm-8">
+            <h4 class="form-title">Applicant Info</h4>
+            <span>All fields marked with an asterisk <span class="required">*</span> are required</span>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="form-logo pull-right">
+              <p>Secure Application</p>
+              <img src="img/logo-m.png" alt="">
+              <span>powered by <span>VeriSign</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <form action="form-submit.html" method="get"class="clearfix">
+            <section class="applicant">
+              <h3 class="form-heading">Applicant</h3>
+              <div class="section-content">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-5 forms-inline">
+                    <div class="form-group">
+                      <label for="f-name"><span class="required">*</span>First Name</label>
+                      <input type="text" class="form-control" id="f-name">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-1 forms-inline">
+                    <div class="form-group">
+                      <label for="mi">MI</label>
+                      <input type="text" class="form-control" id="mi">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-4 forms-inline">
+                    <div class="form-group">
+                      <label for="l-name"><span class="required">*</span>Last Name</label>
+                      <input type="text" class="form-control" id="l-name">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-2 forms-inline">
+                    <label for="l-name"><span class="required">*</span>Gender</label>
+                    <select name="" id="">
+                      <option value="">Male</option>
+                      <option value="">Female</option>
+                    </select>
+                  </div>
+                </div><!-- row -->
+
+                <div class="row">
+                  <div class="col-xs-12 col-sm-4 forms-inline">
+                    <div class="form-group dates">
+                      <label><span class="required">*</span>Date of Birth</label>
+                      <input type="number" class="form-control" placeholder="mm">
+                      <span>/</span>
+                      <input type="number" class="form-control" placeholder="dd">
+                      <span>/</span>
+                      <input type="number" class="form-control" placeholder="yyyy">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-7 col-sm-offset-1 forms-inline">
+                    <label for="l-name"><span class="required">*</span>Use Tobacco Products</label>
+                    <div class="radio">
+                      <div class="f-group">
+                        <input class="radio" id="radio-1" name="rd" type="radio">
+                        <label for="radio-1" class="radio-label">Yes</label>
+                      </div>
+                    </div>
+                    <div class="radio">
+                      <div class="f-group">
+                        <input class="radio" id="radio-2" name="rd" type="radio">
+                        <label for="radio-2" class="radio-label">No</label>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- row -->
+
+                <div class="row">
+                  <div class="col-xs-12 forms-inline">
+                   <div class="form-group">
+                      <label for="l-name">Phone Number</label>
+                      (<input type="text"  class="form-control tel-code">)
+                      <input type="text" class="form-control tel-number">
+                   </div>
+                  </div>
+                </div><!-- row -->
+
+                <div class="row">
+                  <div class="col-xs-12 forms-inline">
+                    <div class="form-group">
+                      <label>Email Address: By providing your e-mail address, you authorize <strong>MFA</strong> to send you important health plan information</label>
+                      <input type="email" class="form-control">
+                    </div>
+                  </div>
+                </div><!-- row -->
+
+                <div class="row">
+                  <div class="col-xs-12 forms-inline">
+                    <div class="form-group">
+                      <div class="f-group">
+                        <input class="checkbox" id="checkbox-3" type="checkbox">
+                        <label for="checkbox-3" class="checkbox-label"><span>You may have the option to receive certain plan information and coverage documents securely on-line instead of via postal mail. If you prefer to receive the communications described in your enrollment book on-line, please check this box.</span></label>
+                    </div>
+                  </div>
+                </div><!-- row -->
+              </div><!-- section-content -->
+              <button type="submit" class="btn f-btn pull-right">Next</button>
+            </section><!-- applicant -->
+          </form>
+
+        </div><!-- modal-body -->
+      </div><!-- modal-content-wrapper -->
+
+    </div><!-- modal-content -->
+
+  </div>
+</div><!-- FormModal -->
+
+  <!-- Modal -->
+  <div id="privacyModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- privacyModal -->
+
+   <!-- Modal -->
+  <div id="termsModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- termsModal -->
+
+  <!-- jQuery -->
+  <script src="js/jquery-1.12.2.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/jquery.scrollTo.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/script.js"></script>
+    <script src="js/javascript.ag.js"></script>
+  <script src="js/operator.php"></script>
+</body>
+
+</html>

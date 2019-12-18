@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Mediacare</title>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <header>
+      <div class="container">
+        <div class="row top-header">
+          <div class="col-xs-12 col-sm-6">
+            <a href=""><img class="img-responsive" src="img/logo.png" alt=""></a>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="header-tagline">
+              <p class="tel">1-888-408-6913</p>
+              <span>Speak with a Licensed Insurance Agent</span>
+              <span><span id="operator"></span>Agents are waiting to take your call</span>
+            </div><!-- header-tagline -->
+          </div>
+        </div><!-- row top-header-->
+      </div><!-- container -->
+
+       <nav class="navbar navbar-default">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="l-active"><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                  <a href="/portfolio/medicare-basics.html">Medicare Basics</a>
+                  <ul class="dropdown-menu" id="dropdown-menu-b">
+                    <li><a href="/portfolio/medicare-basics.html#m-basics-a">Medicare Part A</a></li> 	
+                    <li><a href="/portfolio/medicare-basics.html#m-basics-b">Medicare Part B</a></li>
+                    <li><a href="/portfolio/medicare-basics.html#m-basics-c">Medicare Part C</a></li>
+                    <li><a href="/portfolio/medicare-basics.html#m-basics-d">Medicare Part D</a></li>
+                    <li><a href="/portfolio/medicare-basics.html#m-supplement">Medicare Supplements</a></li>
+                  </ul>
+                </li>
+                <li><a href="mediacare-options.html">Medicare Options</a></li>
+                <li><a href="mediacare-resources.html">Medicare Resources</a></li>
+                <li><a href="form-b.html">Contact</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+
+    </header><!-- header -->
+
+    <main>
+      <section class="banner-section">
+        <div class="container">
+          <div class="col-xs-12 col-sm-6">
+            <div class="box-container text-center">
+              <h2>Medicare Explained Simply</h2>
+              <div class="subtext">We're here to help answer your questions and understand your Medicare plan options.</div>
+              <div class="mask"></div>
+              <h3>Compare Medicare Plans in Your Area</h3>
+              <form action="plans-a.html" method="get">
+                <div class="zip-code-content">
+                  <input class="zip-code mc-placeholder form-control" name="zip-code" placeholder="Zip code" id="zip_code" maxlength="5">
+                  <input class="find-plans" type="submit" value="Find Plans">
+                </div>
+              </form>
+              <div class="mask"></div>
+            </div><!-- box-container -->
+          </div>
+        </div><!-- container -->
+      </section><!-- banner-section -->
+
+      <section class="logos-section hidden-xs">
+        <div class="container">
+          <div id="logos-carousel" class="owl-carousel owl-carousel-logos">
+            <div>
+              <img class="img-responsive" src="img/logos-main/logo1.png" alt="">
+            </div>
+            <div>
+              <img class="img-responsive" src="img/logos-main/logo2.png" alt="">
+            </div>
+            <div>
+              <img class="img-responsive" src="img/logos-main/logo3.png" alt="">
+            </div>
+            <div>
+              <img class="img-responsive" src="img/logos-main/logo4.png" alt="">
+            </div>
+            <div>
+              <img class="img-responsive" src="img/logos-main/logo5.png" alt="">
+            </div>
+          </div>
+          <div class="mask"></div>
+        </div><!-- container -->
+      </section><!-- logos-section -->
+
+      <section class="medicare-plans-section">
+        <div class="container">
+          <div class="row medicare-plans">
+            <div class="col-xs-12 col-sm-4 text-center">
+              <h3><a href="" data-toggle="modal" data-target="#find-plans">Medicare Advantage</a></h3>
+              <p>These plans include hospital, medical, and sometimes prescription drug and other coverage.</p>
+              <a href="" class="btn" data-toggle="modal" data-target="#find-plans">Find plans</a>
+            </div>
+             <div class="col-xs-12 col-sm-4 text-center">
+              <h3><a href="" data-toggle="modal" data-target="#find-plans">Medicare Supplement</a></h3>
+              <p>Also called Medigap, these plans help cover cost gaps if you have Medicare Part A & Part B.</p>
+              <a href="" class="btn" data-toggle="modal" data-target="#find-plans">Find plans</a>
+            </div>
+             <div class="col-xs-12 col-sm-4 text-center">
+              <h3><a href="" data-toggle="modal" data-target="#find-plans">Medicare Part D</a></h3>
+              <p>Standalone prescription drug plans<br> that offer coverage for<br> medication costs.</p>
+              <a href="" class="btn" data-toggle="modal" data-target="#find-plans">Find plans</a>
+            </div>
+          </div>
+          <div class="mask"></div>
+        </div>
+      </section><!-- medicare-plans -->
+
+      <section class="testimonials-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h3>Testimonials</h3>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <p>“I was lost when I was turnign 65. I was flooded with calls and brochures from so many different insurance companies and they all said they had the best insurnace. Thankfully, The Medicare Enrollment Center was able to provide a comprehensive comparison of all the different insurance companies available in my area which helped my decision making process very simple. Glad I called. Thanks guys!"<span>Gerald R. Tuscaloosa, AL</span></p>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <p>"The Medicare Enrollment Center has been wonderful in helping my husband and I transition into Medicare. We trust our agent  and know he treats us with the highest level of inegrity and care. <span>Evelyn M. Charleston, SC</span></p>
+              <p>"My agent was very knowledgeable and helped me choose a plan that fit my coverage needs and my budget. I would recommend them to anyone looking for Medicare Insurance." <span>Victoria S. Austin, TX</span></p>
+            </div>
+          </div>
+          <div class="mask"></div>
+        </div><!-- container -->
+      </section><!-- medicare-services-section -->
+
+      <section class="medicare-in-your-area">
+        <div class="container">
+          <h2 class="text-center">Medicare Plans in Your Area</h2>
+          <div class="col-xs-12 col-sm-5">
+            <img class="img-responsive" src="img/map.png" alt="">
+          </div>
+          <div class="col-xs-12 col-sm-7 list-of-states">
+            <ul>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Alabama</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Alaska</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Arkansass</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Arizona</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">California</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Colorado</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Connectiut</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Delaware</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Distict of Columbia</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Florida</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Georgia</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Hawaii</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Idaho</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Illinois</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Indiana</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Iowa</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Kansas</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Kentucky</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Louisiana</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Maine</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Maryland</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Massachusetts</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Michigan</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Minnesota</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Mississippi</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Missouri</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Montana</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Nebraska</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Nevada</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">New Hampshire</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">New Jersey</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">New Mexico</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">New York</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">North Carolina</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">North Dakota</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Ohio</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Oklahoma</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Oregon</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Pennsylvania</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Rhode Island</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">South Carolina</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">South Dakota</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Tennessee</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Texas</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Utah</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Vermont</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Virginia</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Washington</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">West Virginia</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Wisconsin</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Wyoming</a></li>
+            </ul>
+          </div><!-- list-of-states -->
+        </div><!-- container -->
+      </section><!-- medicare-in-your-area -->
+
+    </main><!-- main -->
+
+   <footer>
+     <div class="container">
+        <div class="top-footer top-footer-inner-pages clearfix">
+          <div class="col-xs-12 col-sm-7">
+            <ul>
+              <li><a href="index.html">Medicare Basics</a></li>
+              <li><a href="mediacare-options.html">Medicare Options</a></li>
+              <li><a href="mediacare-resources.html">Medicare Resources</a></li>
+              <li><a href="">Medicare Services</a></li>
+              <li><a href="form-b.html">Contact</a></li>
+            </ul>
+            <ul>
+              <li><a href="" data-toggle="modal" data-target="#privacyModal">Privacy Policy</a></li>
+              <li><a href="" data-toggle="modal" data-target="#termsModal">Terms & Conditions</a></li>
+            </ul>
+            <ul class="socials">
+              <li><a class="facebook" href=""></a></li>
+              <li><a class="linkedin" href=""></a></li>
+              <li><a class="twitter" href=""></a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-sm-offset-1">
+            <div class="contact-block">
+              <hgroup>
+                <h4>Speak with a Licensed Insurance Agent</h4>
+                <h2>1-888-408-6913</h2>
+              </hgroup>
+              <a href=""><img src="img/footer-logo.png" alt=""></a>
+            </div>
+          </div>
+        </div><!-- top-footer -->
+     </div><!-- container -->
+
+      <div class="copyright">
+        <div class="container">
+          <div class="col-xs-12 col-sm-8 copyright-text">
+            <p>Copyright &copy; TheMedicareEnrollmentCenter.com. All rights reserved.</p>
+          </div>
+        </div>
+      </div><!-- copyright -->
+    </footer>
+
+  </div><!-- container-fluid -->
+
+  <!-- Modal -->
+  <div id="stateModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+   <!-- Modal -->
+  <div id="find-plans" class="find-plans modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+        </div>
+        <div class="modal-body">
+          <div class="box-container text-center">
+            <h2>Medicare Explained Simply</h2>
+            <div class="subtext">We're here to help answer your questions and understand your Medicare plan options.</div>
+            <div class="mask"></div>
+            <h3>Compare Medicare Plans in Your Area</h3>
+            <form action="plans-a.html" method="get">
+              <div class="zip-code-content">
+                <input class="zip-code mc-placeholder form-control" name="zip-code" placeholder="Zip code" id="zip_code" maxlength="5">
+                <input class="find-plans" type="submit" value="Find Plans">
+              </div>
+            </form>
+            <div class="mask"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="privacyModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- privacyModal -->
+
+   <!-- Modal -->
+  <div id="termsModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- termsModal -->
+
+
+  <!-- jQuery -->
+  <script src="js/jquery-1.12.2.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/jquery.scrollTo.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/javascript.ag.js"></script>
+  <script src="js/operator.php"></script>
+
+</body>
+
+</html>

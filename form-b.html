@@ -1,0 +1,424 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Mediacare</title>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <header>
+      <div class="container">
+        <div class="row top-header">
+          <div class="col-xs-12 col-sm-6">
+            <a href=""><img class="img-responsive" src="img/logo.png" alt=""></a>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="header-tagline">
+              <p class="tel">1-888-408-6913</p>
+              <span>Speak with a Licensed Insurance Agent</span>
+              <span><span id="operator"></span>Agents are waiting to take your call</span>
+            </div><!-- header-tagline -->
+          </div>
+        </div><!-- row top-header-->
+      </div><!-- container -->
+
+       <nav class="navbar navbar-default">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                  <a href="/medicare-basics.html" href="#">Medicare Basics</a>
+                  <ul class="dropdown-menu" id="dropdown-menu-b">
+                    <li><a href="/medicare-basics.html#m-basics-a">Medicare Part A</a></li>
+                    <li><a href="/medicare-basics.html#m-basics-b">Medicare Part B</a></li>
+                    <li><a href="/medicare-basics.html#m-basics-c">Medicare Part C</a></li>
+                    <li><a href="/medicare-basics.html#m-basics-d">Medicare Part D</a></li>
+                    <li><a href="/medicare-basics.html#m-supplement">Medicare Supplements</a></li>
+                  </ul>
+                </li>
+                <li><a href="mediacare-options.html">Medicare Options</a></li>
+                <li><a href="mediacare-resources.html">Medicare Resources</a></li>
+                <li class="l-active"><a href="form-b.html">Contact</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+
+    </header><!-- header -->
+
+    <main class="form-b">
+
+      <section class="logos-section hidden-xs">
+        <div class="container">
+          <div class="col-xs-12 col-sm-8">
+            <ul>
+              <li>
+                <img class="img-responsive" src="img/logos-main/logo1.png" alt="">
+              </li>
+              <li>
+                <img class="img-responsive" src="img/logos-main/logo2.png" alt="">
+              </li>
+              <li>
+                <img class="img-responsive" src="img/logos-main/logo4.png" alt="">
+              </li>
+              <li>
+                <img class="img-responsive" src="img/logos-main/logo5.png" alt="">
+              </li>
+            </ul>
+          </div>
+        </div><!-- container -->
+      </section><!-- logos-section -->
+
+      <section class="section-form">
+          <div class="container">
+            <div class="col-xs-12 col-sm-8 form-b-m">
+              <div class="form-header clearfix">
+              <div class="col-xs-12 col-sm-8">
+                <h4 class="form-title">Contact Us</h4>
+                <span>All fields marked with an asterisk <span class="required">*</span> are required</span>
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                <div class="form-logo pull-right">
+                  <p>Secure Application</p>
+                  <img src="img/logo-m.png" alt="">
+                  <span>powered by <span>VeriSign</span></span>
+                </div>
+              </div>
+            </div>
+            <form action="" class="clearfix">
+              <section class="applicant">
+                <div class="section-content">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-5 forms-inline">
+                      <div class="form-group">
+                        <label for="f-name"><span class="required">*</span>First Name</label>
+                        <input type="text" class="form-control" id="f-name">
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-1 forms-inline">
+                      <div class="form-group">
+                        <label for="mi">MI</label>
+                        <input type="text" class="form-control" id="mi">
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 forms-inline">
+                      <div class="form-group">
+                        <label for="l-name"><span class="required">*</span>Last Name</label>
+                        <input type="text" class="form-control" id="l-name">
+                      </div>
+                    </div>
+                  </div><!-- row -->
+
+               <!--    <div class="row">
+                    <div class="col-xs-12 col-sm-4 forms-inline">
+                      <div class="form-group dates">
+                        <label><span class="required">*</span>Date of Birth</label>
+                        <input type="number" class="form-control" placeholder="mm">
+                        <span>/</span>
+                        <input type="number" class="form-control" placeholder="dd">
+                        <span>/</span>
+                        <input type="number" class="form-control" placeholder="yyyy">
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-7 col-sm-offset-1 forms-inline">
+                      <label for="l-name"><span class="required">*</span>Use Tobacco Products</label>
+                      <div class="radio">
+                        <div class="f-group">
+                          <input class="radio" id="radio-1" name="rd" type="radio">
+                          <label for="radio-1" class="radio-label">Yes</label>
+                        </div>
+                      </div>
+                      <div class="radio">
+                        <div class="f-group">
+                          <input class="radio" id="radio-2" name="rd" type="radio">
+                          <label for="radio-2" class="radio-label">No</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- row -->
+
+                  <div class="row">
+                    <div class="col-xs-12 forms-inline">
+                      <div class="form-group">
+                        <label><span class="required">*</span>Email address</label>
+                        <input type="email" class="form-control">
+                      </div>
+                    </div>
+                  </div><!-- row -->
+
+                  <div class="row">
+                    <div class="col-xs-12 forms-inline">
+                     <div class="form-group">
+                        <label for="l-name">Phone Number</label>
+                        (<input type="text"  class="form-control tel-code">)
+                        <input type="text" class="form-control tel-number">
+                     </div>
+                    </div>
+                  </div><!-- row -->
+
+                  <div class="row">
+                    <div class="col-xs-12 forms-inline">
+                      <div class="form-group">
+                        <label>Email Address: By providing your e-mail address, you authorize <strong>MFA</strong> to send you important health plan information</label>
+                        <input type="email" class="form-control">
+                      </div>
+                    </div>
+                  </div><!-- row -->
+
+                  <div class="row">
+                    <div class="col-xs-12 forms-inline">
+                      <div class="form-group">
+                        <label>Message</label>
+                        <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                      </div>
+                    </div>
+                  </div><!-- row -->
+
+                  <button type="button" class="btn f-btn pull-right">Next</button>
+              </section><!-- applicant -->
+
+            </form>
+          </div>
+
+          <div class="col-xs-12 col-sm-4 inner-secondary">
+            <a href="">View Agents Screen</a>
+
+            <div class="schedule">
+              <h3>Office Hours</h3>
+              <a href="tel:1-888-408-6913">1-888-408-6913</a>
+
+              <div class="table-responsive">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>Monday-Friday</td>
+                      <td>9:00am - 7:30pm</td>
+                    </tr>
+                    <tr>
+                      <td>Saturday</td>
+                      <td>10:00am - 4:00pm</td>
+                    </tr>
+                    <tr>
+                      <td>Sunday</td>
+                      <td>Closed</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div><!-- table-responsive -->
+
+            </div><!-- schedule -->
+          </div><!-- inner-secondary -->
+        </div><!-- container -->
+      </section><!-- section-form -->
+
+      <section class="book-now">
+        <iframe src="https://scheduler.wix.com/index?cacheKiller=1474616561099&compId=TPASection_ii4dnf5l&deviceType=desktop&instance=8SgAkwAixbzCBpOwer6ahX_-Za5fTNO1MgKhX1KZkRM.eyJpbnN0YW5jZUlkIjoiMzM5MzkyMmYtOWE0Zi00YThiLWE0ODMtOWVhZWQ5YjhhNmYzIiwic2lnbkRhdGUiOiIyMDE2LTA5LTIzVDA1OjAzOjQ5LjQ4OFoiLCJ1aWQiOm51bGwsImlwQW5kUG9ydCI6IjE5My44Ljc4LjU0LzYzNDM5IiwidmVuZG9yUHJvZHVjdElkIjoiV2l4Qm9va2luZ3NVbmxpbWl0ZWQiLCJkZW1vTW9kZSI6ZmFsc2UsIm9yaWdpbkluc3RhbmNlSWQiOiIxN2VlOWRiZS0yNDlhLTRlOWQtOTFiOS01NmI0ZTRjNDgxMWQiLCJhaWQiOiJkYWRkMjljYy0xMWNjLTRhZjAtYjBlZS0zOGRjMjgwNjU3Y2QiLCJiaVRva2VuIjoiNjc0NjBiY2YtYWM1Mi0wZjYwLTM2OTUtM2MyNDIyMTFmMDllIiwic2l0ZU93bmVySWQiOiIwZTIyNmU1ZC1jNGU5LTRhNjMtYWI3Ni1mMTkzMjQ1NTk5OGYifQ&locale=en&section-url=http%3A%2F%2Fwww.medicareabc.org%2Fcontact-us%2F&target=_top&viewMode=site&width=980#/scheduler/visitor/individual/services" frameborder="0" width="100%" height="100%"></iframe>
+      </section>
+
+      <section class="medicare-in-your-area">
+        <div class="container">
+          <div class="col-xs-12 col-sm-5">
+            <img class="img-responsive" src="img/map.png" alt="">
+          </div>
+          <div class="col-xs-12 col-sm-7 list-of-states">
+            <ul>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Alabama</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Alaska</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Arkansass</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Arizona</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">California</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Colorado</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Connectiut</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Delaware</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Distict of Columbia</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Florida</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Georgia</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Hawaii</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Idaho</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Illinois</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Indiana</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Iowa</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Kansas</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Kentucky</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Louisiana</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Maine</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Maryland</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Massachusetts</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Michigan</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Minnesota</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Mississippi</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Missouri</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Montana</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Nebraska</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Nevada</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">New Hampshire</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">New Jersey</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">New Mexico</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">New York</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">North Carolina</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">North Dakota</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Ohio</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Oklahoma</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Oregon</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Pennsylvania</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Rhode Island</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">South Carolina</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">South Dakota</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Tennessee</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Texas</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Utah</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Vermont</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Virginia</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Washington</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">West Virginia</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Wisconsin</a></li>
+              <li><a href="" data-toggle="modal" data-target="#stateModal">Wyoming</a></li>
+            </ul>
+          </div><!-- list-of-states -->
+        </div><!-- container -->
+      </section><!-- medicare-in-your-area -->
+
+    </main><!-- main -->
+
+    <footer>
+     <div class="container">
+        <div class="top-footer top-footer-inner-pages clearfix">
+          <div class="col-xs-12 col-sm-7">
+            <ul>
+              <li><a href="index.html">Medicare Basics</a></li>
+              <li><a href="mediacare-options.html">Medicare Options</a></li>
+              <li><a href="mediacare-resources.html">Medicare Resources</a></li>
+              <li><a href="">Medicare Services</a></li>
+              <li><a href="form-b.html">Contact</a></li>
+            </ul>
+            <ul>
+              <li><a href="" data-toggle="modal" data-target="#privacyModal">Privacy Policy</a></li>
+              <li><a href="" data-toggle="modal" data-target="#termsModal">Terms & Conditions</a></li>
+            </ul>
+            <ul class="socials">
+              <li><a class="facebook" href=""></a></li>
+              <li><a class="linkedin" href=""></a></li>
+              <li><a class="twitter" href=""></a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-sm-offset-1">
+            <div class="contact-block">
+              <hgroup>
+                <h4>Speak with a Licensed Insurance Agent</h4>
+                <h2>1-888-408-6913</h2>
+              </hgroup>
+              <a href=""><img src="img/footer-logo.png" alt=""></a>
+            </div>
+          </div>
+        </div><!-- top-footer -->
+     </div><!-- container -->
+
+      <div class="copyright">
+        <div class="container">
+          <div class="col-xs-12 col-sm-8 copyright-text">
+            <p>Copyright &copy; TheMedicareEnrollmentCenter.com. All rights reserved.</p>
+          </div>
+        </div>
+      </div><!-- copyright -->
+    </footer>
+
+  </div><!-- container-fluid -->
+
+  <!-- Modal -->
+  <div id="stateModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+    <!-- Modal -->
+  <div id="privacyModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- privacyModal -->
+
+   <!-- Modal -->
+  <div id="termsModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- termsModal -->
+
+  <!-- jQuery -->
+  <!-- jQuery -->
+  <script src="js/jquery-1.12.2.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/jquery.scrollTo.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/script.js"></script>
+    <script src="js/javascript.ag.js"></script>
+  <script src="js/operator.php"></script>
+</body>
+
+</html>
